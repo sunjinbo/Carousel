@@ -1,0 +1,64 @@
+/*
+============================================================================
+ Name        : Carousel.mmp
+ Author      : Sun Jinbo
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for Carousel.
+============================================================================
+*/
+
+MACRO _HELP_AVAILABLE_
+
+TARGET            Carousel_0xe3732b5d.exe
+TARGETTYPE        exe
+UID               0x100039CE 0xe3732b5d
+
+SOURCEPATH        ..\src
+SOURCE            Carousel.cpp
+SOURCE            CarouselApplication.cpp
+SOURCE            CarouselAppView.cpp
+SOURCE            CarouselAppUi.cpp
+SOURCE            CarouselDocument.cpp
+SOURCE            CarouselScene.cpp
+SOURCE            CarouselItem.cpp
+SOURCE            OrbitPoint.cpp
+
+SOURCEPATH        ..\data
+
+START RESOURCE    Carousel.rss
+HEADER
+TARGET Carousel_0xe3732b5d
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE    Carousel_reg.rss
+TARGET Carousel_0xe3732b5d_reg
+TARGETPATH       \private\10003a3f\apps
+END //RESOURCE
+
+USERINCLUDE       ..\inc
+USERINCLUDE       ..\help
+
+SYSTEMINCLUDE     /epoc32/include
+
+LIBRARY           euser.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib
+LIBRARY           eikcore.lib
+LIBRARY           avkon.lib
+LIBRARY           commonengine.lib
+LIBRARY           efsrv.lib 
+LIBRARY           estor.lib
+LIBRARY           aknnotify.lib
+LIBRARY           gdi.lib
+LIBRARY           fbscli.lib
+LIBRARY           bitgdi.lib
+LIBRARY           ws32.lib
+
+LANG SC
+
+VENDORID          0
+SECUREID          0xe3732b5d
+CAPABILITY        ReadUserData
+
+// End of File

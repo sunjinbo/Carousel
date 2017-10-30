@@ -1,0 +1,36 @@
+; Installation file for Carousel application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"Carousel"},(0xe3732b5d),1,0,0
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports Series 60 v 5.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"\epoc32\release\armv5\urel\Carousel_0xe3732b5d.exe"		-"!:\sys\bin\Carousel_0xe3732b5d.exe"
+"\epoc32\data\z\resource\apps\carousel_0xe3732b5d.rsc"		-"!:\resource\apps\Carousel_0xe3732b5d.rsc"
+"\epoc32\data\z\private\10003a3f\apps\carousel_0xe3732b5d_reg.rsc"	-"!:\private\10003a3f\import\apps\Carousel_0xe3732b5d_reg.rsc"
+"\epoc32\data\z\resource\apps\carousel_0xe3732b5d.mif" -"!:\resource\apps\Carousel_0xe3732b5d.mif"
+
+; Add any installation notes if applicable
+;"Carousel.txt"		-"!:\private\e3732b5d\Carousel.txt"
+
+;required for application to be covered by backup/restore facility 
+"..\sis\backup_registration.xml"		-"!:\private\e3732b5d\backup_registration.xml"

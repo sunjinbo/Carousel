@@ -1,0 +1,36 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Sun Jinbo
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a Carousel.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+
+#ifdef SBSV2
+
+PRJ_EXTENSIONS
+	
+	START EXTENSION s60/mifconv
+	OPTION TARGETFILE carousel_0xe3732b5d.mif
+	OPTION HEADERFILE carousel_0xe3732b5d.mbg
+	OPTION SOURCEDIR ../gfx
+	OPTION SOURCES -c32 qgn_menu_Carousel
+	END
+
+#else
+
+PRJ_MMPFILES
+
+	gnumakefile icons_scalable_dc.mk
+
+#endif
+
+PRJ_MMPFILES
+
+Carousel.mmp

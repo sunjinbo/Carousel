@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name		: Carousel.hrh
+ Author	  : Sun Jinbo
+ Copyright   : Your copyright notice
+ Description : This file contains declarations for constants of Carousel.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef __CAROUSEL_HRH__
+#define __CAROUSEL_HRH__
+
+#define _UID3 0xe3732b5d
+
+// Carousel enumerate command codes
+enum TCarouselIds
+    {
+    EAbout = 0x6001 // start value must not be 0
+    };
+
+#endif // __CAROUSEL_HRH__
