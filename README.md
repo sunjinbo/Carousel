@@ -1,3 +1,3 @@
 # Carousel
 
-this app create some cards, and you can swipe them just like carousel effect
+this app create some cards and you can swipe them like running carousel
